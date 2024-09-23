@@ -1,4 +1,4 @@
-package org.com.some;
+package org.com.some.genreMusic;
 
 public class ClassicalMusic implements Music {
 
