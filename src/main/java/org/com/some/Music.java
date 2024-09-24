@@ -1,4 +1,5 @@
-package org.com.some.genreMusic;
+package org.com.some;
+
 
 public interface Music {
     String getSong();
