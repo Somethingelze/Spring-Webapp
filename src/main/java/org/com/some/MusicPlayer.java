@@ -1,15 +1,20 @@
 package org.com.some;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MusicPlayer {
-    private Music music;
+    private ClassicalMusic classicalMusic;
 
 
-    public MusicPlayer(Music music) {
-        this.music = music;
+    @Autowired
+    public MusicPlayer(ClassicalMusic classicalMusic) {
+        this.classicalMusic = classicalMusic;
     }
 
-    public void play() {
-        System.out.println("Now playing " + music.getSong());
+    public String play() {
+        return classicalMusic.getSong();
+
     }
 }
